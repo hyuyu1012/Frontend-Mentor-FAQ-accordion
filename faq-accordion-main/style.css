@@ -11,8 +11,22 @@
   box-sizing: border-box;
 }
 
-html, body {
-  min-height: 100vh;
+body {
+  height: 100vh;
+  margin: 0;
+}
+.top{
+  height: 30%;
+  z-index: 0;
+}
+.bottom{
+  height : 70%;
+  background-color: var(--Light-pink);
+  z-index: 0;
 }
 
+.card{
+  width : 300px;
+  z-index: 1;
+}
 
