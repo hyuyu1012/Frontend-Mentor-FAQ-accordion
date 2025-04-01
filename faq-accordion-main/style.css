@@ -26,7 +26,41 @@ body {
 }
 
 .card{
-  width : 300px;
+  width : 40%;
+  padding : 25px;
+  border-radius: 2%;
+  background-color: var(--white);
   z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.30);
 }
 
+h1 {
+  margin-left : 20px;
+  display: inline-block;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.question {
+  font-family : "Work Sans";
+  font-weight : 600;
+  font-size: 0.92rem;
+}
+
+button {
+  
+}
+
+
+.answer {
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--Grayish-purple);
+  line-height: 1.5rem;
+}
