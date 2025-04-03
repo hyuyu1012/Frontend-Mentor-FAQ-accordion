@@ -16,8 +16,12 @@ body {
   margin: 0;
 }
 .top{
-  height: 30%;
+  height: 35%;
   z-index: 0;
+}
+
+.banner{
+  
 }
 .bottom{
   height : 70%;
@@ -26,11 +30,15 @@ body {
 }
 
 .card{
-  width : 40%;
+  display : none;
+  width : 37%;
+  height: auto;
   padding : 25px;
   border-radius: 2%;
   background-color: var(--white);
+  
   z-index: 1;
+  /* 중앙정렬 */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,14 +47,18 @@ body {
 }
 
 h1 {
-  margin-left : 20px;
+  margin : 8px 0px 15px 20px;
   display: inline-block;
   font-family: "Work Sans";
   font-weight: 700;
   font-size: 3.5rem;
 }
 
-.faq{
+hr {
+  opacity: 30%;
+}
+
+.question_box{
   display:  flex;
   justify-content:space-between;
   align-items: center; 
@@ -56,22 +68,17 @@ h1 {
   display: inline-block;
   font-family : "Work Sans";
   font-weight : 600;
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 
 .answer {
   display : none;
   font-family: "Work Sans";
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--Grayish-purple);
-  line-height: 1.5rem;
+  line-height: 1.3rem;
 }
-
-.plus {
-
-}
-
 .minus {
   display : none;
 }

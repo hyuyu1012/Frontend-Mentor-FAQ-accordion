@@ -1,13 +1,17 @@
-const plus_buttons = document.querySelectorAll('.plus');
-const minus_buttons = document.querySelectorAll('.minus');  
+document.querySelectorAll('.faq').forEach(faq => {
+  const plusBtn = faq.querySelector('.plus');
+  const minusBtn = faq.querySelector('.minus');
+  const answer = faq.querySelector('.answer'); 
 
+  plusBtn.addEventListener('click', () => {
+    answer.style.display = "block";
+    plusBtn.style.display = "none";
+    minusBtn.style.display = "block";
+  });
 
-plus_buttons.forEach(function(plus_button) {
-  plus_button.addEventListener('click', function() {alert('plus_button이 출력되었습니다.')
+  minusBtn.addEventListener('click', () => {
+    answer.style.display = "none";
+    minusBtn.style.display = "none";
+    plusBtn.style.display = "block";
   });
 });
-
-minus_buttons.forEach(function(minus_button){
-  minus_button.addEventListener('click', function() {alert('minus_button이 출력되었습니다.')})
-});
-
