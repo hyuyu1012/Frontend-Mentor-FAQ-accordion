@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      background-color: yellow;
+    }
+    .box{
+      background-color: white;
+      margin: 10px;
+      width: 100px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    #box2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      display: flex;
+      flex-direction: column;
+    }
+    .answer {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class ="box">
+    <button type="button" class="button"> 클릭하면 내용물이 늘어납니다.</button>
+    <p class = "answer">늘어날 거에요.</p>
+  </div>
+  <div class="box" id="box2">
+    <button type="button" class="button"> 클릭하면 내용물이 늘어납니다.</button>
+    <p class="text">테스트</p>
+    <p class="text">테스트</p>
+    <p class="text">테스트</p>
+    <p class = "answer">늘어날 거에요.</p>
+    <p class="text">테스트</p>  
+    <p class="text">테스트</p>
+    <p class="text">테스트</p>
+  </div>
+</body>
+
+<script>
+  document.querySelectorAll('.box').forEach(box => {
+    const button = box.querySelector('.button');
+    const answer = box.querySelector('.answer');
+
+    button.addEventListener('click', () => {
+      answer.style.display  = "block";
+        });
+  });
+</script>
+</html>
